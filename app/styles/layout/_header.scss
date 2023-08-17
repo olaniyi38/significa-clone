@@ -1,0 +1,63 @@
+@use '../utils' as *;
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 0rem 1rem;
+    padding: 1rem 1.2rem;
+    position: sticky;
+    top: 0;
+    background: $black-gray;
+    z-index: 10;
+
+    &__logo {
+        font-size: $scale-m ;
+        font-weight: 900;
+        text-transform: capitalize;
+        margin-right: auto;
+    }
+
+    &__nav {
+        display: none;
+    }
+
+    &__toggle {
+        border: 1px solid $v-dark-gray;
+        padding: .6rem .9rem;
+        border-radius: .6rem;
+    }
+
+    .button {
+        display: none;
+    }
+
+    @media screen and (min-width:48rem) {
+        padding: 2rem 2.5rem;
+
+        &__nav {
+            display: block;
+
+            ul {
+                display: flex;
+                font-weight: 500;
+                gap: 1.5rem;
+                text-transform: capitalize;
+            }
+        }
+
+        .button {
+            display: block;
+
+            svg {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (min-width:64rem) {
+        padding: 1.5rem 4rem;
+
+
+
+    }
+}

@@ -1,0 +1,43 @@
+@use '../utils/' as *;
+
+.testimonial {
+    padding: 0rem 1.5rem 1.5rem 1.5rem;
+
+    &__comment {
+        font-size: 1.2rem;
+        font-weight: 700;
+        background: hsl(0, 0%, 19%);
+        display: inline;
+    }
+
+    &__about {
+        display: flex;
+        align-items: center;
+        gap: 0rem .5rem;
+        margin-top: 1rem;
+    }
+
+
+    &__img {
+        width: 3rem;
+
+        img {
+            border-radius: 100%;
+        }
+    }
+
+    &__by {
+        font-size: $scale-xs;
+        font-weight: 700;
+
+        h4 {
+            color: $dark-gray;
+        }
+    }
+
+    @media screen and (min-width:48rem) {
+        &__about {
+            margin-top: 1.3rem;
+        }
+    }
+}

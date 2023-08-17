@@ -1,0 +1,34 @@
+@use '../utils/' as *;
+
+.handbook-cta {
+    background: hsl(48, 100%, 57%);
+    padding: 2rem;
+    width: min(90%, 80rem);
+    margin: 0 auto;
+    border-radius: 1rem;
+
+    &__title {
+        font-size: $scale-m ;
+        color: hsl(49, 27%, 15%);
+        font-weight: 700;
+    }
+
+    &__text {
+        color: hsl(49, 27%, 15%);
+        font-size: 1.2rem;
+        margin: 1.2rem 0rem;
+    }
+
+    .button {
+        background: hsl(48, 100%, 57%);
+        color: hsl(49, 27%, 15%);
+        border: 1px solid hsl(49, 27%, 15%);
+        font-weight: 500;
+    }
+
+    @media screen and (min-width:48rem) {
+        .button {
+            margin-top: 3rem;
+        }
+    }
+}

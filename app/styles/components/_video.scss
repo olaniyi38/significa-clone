@@ -1,0 +1,31 @@
+@use '../utils' as *;
+
+.video {
+    position: relative;
+    cursor: none;
+    overflow: hidden;
+
+
+    video {
+        border-radius: 1rem;
+
+     
+
+    }
+
+    &__play {
+        position: absolute;
+        top: 0;
+        padding: .5rem 1rem;
+        font-size: .9rem;
+        background: $black-gray;
+        color: $white;
+        border-radius: .5rem;
+        display: flex;
+        align-items: center;
+        gap: .3rem;
+        font-weight: 500;
+        width: 11rem;
+        z-index: 1;
+    }
+}

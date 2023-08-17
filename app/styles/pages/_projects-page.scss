@@ -1,0 +1,49 @@
+@use '../utils/' as *;
+
+.projects-page {
+    &__title {
+        font-size: $scale-m;
+        font-weight: 500;
+        color: $dark-gray;
+        padding: 1.2rem;
+    }
+
+    .selected-work {
+        &__info {
+            a.to-project {
+                margin-top: auto;
+            }
+
+            .button {
+                font-size: 1rem;
+            }
+
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__title {
+            padding: 1.2rem 2.5rem;
+        }
+    }
+
+    @media screen and (min-width:1024px) {
+        &__title {
+            padding: 1.2rem 4rem;
+        }
+
+        .selected-work {
+            &__info {
+
+                hgroup {
+                    font-size: 2.7rem;
+
+                    @media screen and (min-width:768px) {
+                        max-width: 35rem;
+                    }
+                }
+            }
+        }
+    }
+
+}

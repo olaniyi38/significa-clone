@@ -1,0 +1,39 @@
+@use '../utils/' as *;
+
+.about {
+    padding: 2rem 1rem;
+    border-top: 1px solid $v-dark-gray;
+
+    &__titles {
+        font-size: $scale-m;
+        font-weight: 700;
+
+        h1 {
+            color: $dark-gray;
+        }
+
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        color: $dark-gray;
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    @media screen and (min-width:48rem) {
+        padding: 2rem 2.5rem;
+
+        &__titles {
+            font-size: 2rem;
+        }
+
+        &__text {
+            max-width: 35rem;
+        }
+    }
+
+    @media screen and (min-width:64rem) {
+        padding: 4rem;
+    }
+}

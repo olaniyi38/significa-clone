@@ -1,0 +1,72 @@
+@use '../utils/' as *;
+
+.careers {
+    cursor: pointer;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem 0rem;
+
+    &__title {
+        font-size: $scale-l;
+        font-weight: 700;
+        padding: 1.5rem 0rem;
+        border-bottom: 1px solid $v-dark-gray;
+
+    }
+
+    > div {
+        margin-bottom: 1rem;
+
+        > .button {
+            margin: 2rem 0rem 0rem 0rem;
+        }
+
+    }
+
+
+    .career {
+        display: flex;
+        padding: 2rem 0rem;
+        border-bottom: 1px solid $v-dark-gray;
+
+        &:hover {
+            color: $dark-gray;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            flex: 2 1 0;
+            text-transform: capitalize;
+            transition: color .2s ease-in-out;
+        }
+
+        .button {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    @media screen and (min-width:48rem) {
+        padding: 2rem 2.5rem;
+    }
+
+    @media screen and (min-width:64rem) {
+        flex-direction: row;
+        gap: 0rem 4rem;
+        padding: 2rem 4rem;
+
+        > div {
+            flex: 2.3 1 0;
+            align-self: flex-start;
+        }
+
+        .handbook-cta {
+            flex: 1 1 0;
+            .button {
+                margin-top: 5rem;
+            }
+        }
+    }
+}

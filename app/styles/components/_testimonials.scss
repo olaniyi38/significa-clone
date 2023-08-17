@@ -1,0 +1,57 @@
+@use '../utils/' as *;
+
+
+.testimonials {
+    padding: 3rem 0rem;
+
+    &__titles {
+        font-weight: 700;
+        font-size: $scale-m;
+        line-height: 1.2;
+        text-align: center;
+
+        h1 {
+            color: $dark-gray;
+        }
+    }
+
+    &__svgs {
+        position: relative;
+        margin-top: 1.5rem;
+
+        img {
+            max-width: 7rem;
+            margin: 0 auto;
+
+            &:last-child {
+                position: relative;
+                bottom: 3rem;
+                left: 3rem;
+            }
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    @media screen and (min-width:48rem) {
+        padding: 3rem 2.5rem;
+
+        &__svgs {
+            margin: 1.8rem;
+        }
+    }
+
+    @media screen and (min-width:64rem) {
+        padding: 2rem 4rem;
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+
+}

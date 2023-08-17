@@ -1,0 +1,26 @@
+@use '../utils' as *;
+
+.selected-works {
+  padding: 2rem 0rem;
+
+  &__title {
+    font-size: $scale-l;
+    font-weight: 700;
+    padding: 0rem 1.2rem;
+    text-transform: capitalize;
+  }
+
+  @media screen and (min-width:48rem) {
+    &__title {
+      margin-bottom: .5rem;
+      padding: 0rem 2.5rem;
+    }
+  }
+
+  @media screen and (min-width:64rem) {
+    &__title {
+      padding: 0rem 4rem;
+    }
+  }
+  
+}

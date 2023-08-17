@@ -1,0 +1,31 @@
+@use '../utils/' as *;
+
+.blog {
+    padding: 2rem 0rem;
+
+    &__titles {
+        font-size: $scale-l ;
+        line-height: 1.2;
+        font-weight: 700;
+        padding: 0rem 1rem 1rem 1rem;
+
+        h1 {
+            color: $dark-gray;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        &__titles {
+            padding: 1rem 2.5rem;
+        }
+
+    }
+
+    @media screen and (min-width:1024px) {
+        &__titles {
+            padding: 2rem 4rem;
+        }
+    }
+
+    
+}

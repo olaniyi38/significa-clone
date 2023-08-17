@@ -1,0 +1,11 @@
+@use 'utils' as *;
+@use 'base';
+@use 'layout';
+@use 'components';
+@use 'pages';
+
+
+body {
+    background: $black-gray;
+    color: $white;
+}

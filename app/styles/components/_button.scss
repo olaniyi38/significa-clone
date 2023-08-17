@@ -1,0 +1,22 @@
+@use '../utils' as *;
+
+.button {
+    background: $black-gray;
+    color: $white;
+    border: 1px solid $v-dark-gray;
+    border-radius: .8rem;
+    padding: .5rem 1rem;
+    font-size: $scale-xs;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 0rem .7rem;
+
+
+
+    &--inverted {
+        background: $white;
+        color: $black-gray;
+        border: none;
+    }
+}

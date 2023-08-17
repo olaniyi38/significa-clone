@@ -1,0 +1,98 @@
+@use '../utils/' as *;
+
+.services {
+    border-top: 1px solid $v-dark-gray;
+    padding: 2rem 0rem;
+
+    &__info {
+        padding: 1rem;
+    }
+
+    &__titles {
+        font-weight: 700;
+        font-size: $scale-l;
+        line-height: 1.1;
+
+        h1 {
+            color: $dark-gray;
+            margin-bottom: .5rem;
+        }
+    }
+
+    &__text {
+        padding: 2rem 0rem 0rem;
+        font-size: 1.4rem;
+        line-height: 1.2;
+        color: $dark-gray;
+    }
+
+    .button {
+        margin-top: 1rem;
+        font-size: $scale-s;
+    }
+
+    &__img {
+        border-top: 1px solid $v-dark-gray;
+        border-bottom: 1px solid $v-dark-gray;
+        padding: 0rem 1rem 3rem 1rem;
+        margin-top: 1.5rem;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            object-position: top;
+        }
+    }
+
+
+}
+
+@media screen and (min-width:768px) {
+    .services {
+        &__info {
+            padding: 1rem 2rem;
+        }
+
+        .button {
+            margin-top: 2rem;
+        }
+
+        &__img {
+            img {
+                max-width: 35rem;
+                margin: 0rem auto;
+            }
+
+        }
+    }
+}
+
+@media screen and (min-width:64rem) {
+    .services {
+        display: flex;
+        border-bottom: 1px solid $v-dark-gray;
+        padding: 0;
+
+        &__info {
+            flex: 1 1 30rem;
+            border-left: 1px solid $v-dark-gray;
+            padding: 2rem 4rem;
+            order: 2;
+
+        }
+
+        &__img {
+            flex: 1 1 20rem;
+            border: none;
+            margin: 0;
+            padding: 0rem 4rem;
+            order: 1;
+
+        }
+
+        &__text,
+        &__titles {
+            max-width: 35rem;
+        }
+    }
+}
